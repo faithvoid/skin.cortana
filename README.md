@@ -14,12 +14,10 @@
 - Need to fix something? Cortana Settings Menu has you covered! With shortcuts to the Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates, and more, Cortana can help you out of most pickles!
   
 ## Screenshots:
-![20240421_211210](https://github.com/faithvoid/skin.cortana/assets/56975081/f809d69b-ebf6-43eb-ad82-6223872c8906)
-![20240421_211329](https://github.com/faithvoid/skin.cortana/assets/56975081/99259e08-d826-4a75-978b-6ca5c935093d)
-![20240421_211253](https://github.com/faithvoid/skin.cortana/assets/56975081/31817b61-6eca-4d89-8dd6-933700013877)
-![20240421_211223](https://github.com/faithvoid/skin.cortana/assets/56975081/4995507e-30b7-4e43-a6c2-1509989fc0d6)
-![20240421_211228](https://github.com/faithvoid/skin.cortana/assets/56975081/01500c45-a7b5-4ef2-9fff-cb0f4c76f94f)
-![20240421_211231](https://github.com/faithvoid/skin.cortana/assets/56975081/8f79d5ff-808b-433e-a571-e5d6f3a7a024)
+![cortana1](https://github.com/faithvoid/skin.cortana/assets/56975081/155d9f2a-3961-4962-bc77-d8ca4fde29e9)![cortana2](https://github.com/faithvoid/skin.cortana/assets/56975081/87ebf372-e838-4e63-9459-1ba792ccecaf)
+![games1](https://github.com/faithvoid/skin.cortana/assets/56975081/67e80518-ec0c-42dd-9daf-42c644d40f4a)![games2](https://github.com/faithvoid/skin.cortana/assets/56975081/0ff4259d-46ba-4f82-b6e2-78b35650c017)
+![media1](https://github.com/faithvoid/skin.cortana/assets/56975081/32442a1d-fa12-40a5-b0c6-6a38d98a02b9)![media2](https://github.com/faithvoid/skin.cortana/assets/56975081/f0fb39f4-4458-4143-a8e5-7bc072cb50b8)
+
 
 ## How to install:
 - Download latest release from the Releases category
