@@ -13,6 +13,8 @@
 - Partially reintroduced Gamertag function from MC360 (currently autodetects profile name & avatar from current XBMC profile, Rep/Gamerscore/Zone have to be changed manually in "includes.xml" in the 720p folder. Python script to automate this coming soon!
   
 - Need to fix something? Cortana Settings Menu has you covered! With shortcuts to the Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates, and more, Cortana can help you out of most pickles!
+
+- "Guide button" feature that allows you to quickly check messages in Cortana Chat!
   
 ## Screenshots:
 ![cortana1](https://github.com/faithvoid/skin.cortana/assets/56975081/155d9f2a-3961-4962-bc77-d8ca4fde29e9)![cortana2](https://github.com/faithvoid/skin.cortana/assets/56975081/87ebf372-e838-4e63-9459-1ba792ccecaf)
