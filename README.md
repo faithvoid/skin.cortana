@@ -10,7 +10,7 @@
   
 - Neon wallpapers have been swapped out for pastel abstract shapes (based off of old macOS 9 wallpapers), making the UI easier on the eyes.
   
-- Partially reintroduced Gamertag function from MC360 (currently autodetects profile name & avatar from current XBMC profile, Rep/Gamerscore/Zone have to be changed manually in "includes.xml" in the 720p folder. Python script to automate this coming soon!
+- Reintroduced Gamertag function from MC360! (Name & Avatar are automatically pulled from current XBMC profile, and you can manually edit your Rep, Gamerscore & Zone in Cortana Settings!) 
   
 - Need to fix something? Cortana Settings Menu has you covered! With shortcuts to the Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates, and more, Cortana can help you out of most pickles!
 
