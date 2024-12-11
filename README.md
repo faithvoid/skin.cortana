@@ -21,6 +21,12 @@
 ![games1](https://github.com/faithvoid/skin.cortana/assets/56975081/67e80518-ec0c-42dd-9daf-42c644d40f4a)![games2](https://github.com/faithvoid/skin.cortana/assets/56975081/0ff4259d-46ba-4f82-b6e2-78b35650c017)
 ![media1](https://github.com/faithvoid/skin.cortana/assets/56975081/32442a1d-fa12-40a5-b0c6-6a38d98a02b9)![media2](https://github.com/faithvoid/skin.cortana/assets/56975081/f0fb39f4-4458-4143-a8e5-7bc072cb50b8)
 
+## TODO:
+- Implement guide button.
+- Fix wallpaper memory usage bug.
+- Fix up & release Cortana Server Browser & Cortana Chat.
+- Try to reverse engineer the Kai Engine API? 
+
 
 ## How to install:
 - Download latest release from the Releases category
