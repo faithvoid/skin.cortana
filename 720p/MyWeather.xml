@@ -252,6 +252,13 @@
 							<visible>!Skin.HasSetting(AppsBlade_HideEmus)</visible>
 						</item>
 						<item>
+							<label>Social</label>
+				                        <onclick>ActivateWindow(10001,plugin://programs/xSky/,return)</onclick>
+							<icon>icon-friends.png</icon>
+							<thumb>-</thumb>
+							<visible>!Skin.HasSetting(AppsBlade_HideGames)</visible>
+						</item>
+						<item>
 							<label>31026</label>
 							<onclick>RunScript(Q:\scripts\Cortana Server Browser\insignia\insignia.py)</onclick>
 							<icon>special://skin/button_icons/icon-insignia.png</icon>
