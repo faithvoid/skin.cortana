@@ -34,7 +34,7 @@
 			<control type="label" id="411">
 				<description>Header label</description>
 				<posx>200</posx>
-				<label>31102</label>
+				<label>Xbox Guide</label>
 				<include>DialogHeaderTextCommons</include>
 			</control>
 			<control type="group">
@@ -113,6 +113,11 @@
 						</control>
 					</focusedlayout>
 					<content>
+						<item>
+							<label>Social</label>
+							<onclick>Dialog.Close(shutdownmenu)</onclick>
+				                        <onclick>ActivateWindow(10001,plugin://programs/xSky/,return)</onclick>
+						</item>
 						<item>
 							<label>13005</label>
 							<onclick>XBMC.Powerdown()</onclick>
