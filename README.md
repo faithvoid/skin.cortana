@@ -1,5 +1,5 @@
 # Cortana - A modern, sleek Xbox 180 style theme for XBMC4Xbox, with Cortana Server Browser built-in for Insignia/XLink Kai support.
-## Requires [Cortana Server Browser](https://github.com/faithvoid/script.cortanaserverbrowser), [Cortana Chat](https://github.com/faithvoid/scripts.cortanachatv2) & [xSky](https://github.com/faithvoid/plugin.programs.xSky) to function correctly!
+## Requires [Cortana Server Browser](https://github.com/faithvoid/script.cortanaserverbrowser), [Cortana Chat](https://github.com/faithvoid/script.cortanachatv2) & [xSky](https://github.com/faithvoid/plugin.programs.xSky) to function correctly!
 
 ## Features:
 - Replaced the broken Weather page with Cortana, a series of scripts that allows you to view & join active Insignia/XLink Kai sessions, events, view server statistics, get new match notifications, get Cortana/Insignia/XLink Kai news, check your Insignia DNS settings, send/receive messages, and more!
