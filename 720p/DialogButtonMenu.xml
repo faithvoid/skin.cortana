@@ -34,7 +34,7 @@
 			<control type="label" id="411">
 				<description>Header label</description>
 				<posx>200</posx>
-				<label>Xbox Guide</label>
+				<label>Cortana Guide</label>
 				<include>DialogHeaderTextCommons</include>
 			</control>
 			<control type="group">
