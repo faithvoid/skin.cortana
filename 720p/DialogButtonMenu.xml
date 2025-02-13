@@ -115,47 +115,43 @@
 					<content>
 						<item>
 							<label>Social</label>
-				                        <onclick>ActivateWindow(10001,plugin://programs/xSky/,return)</onclick>
+							<onclick>Dialog.Close(shutdownmenu)</onclick>
+							<onclick>ActivateWindow(9010)</onclick>
+						</item>
+						<item>
+							<label>Friends</label>
+							<onclick>RunScript(Q:\skin\Cortana\scripts\chat.py,Friends)</onclick>
 							<onclick>Dialog.Close(shutdownmenu)</onclick>
 						</item>
 						<item>
-							<label>13005</label>
-							<onclick>XBMC.Powerdown()</onclick>
-						</item>
-						<item>
-							<label>13013</label>
-							<onclick>XBMC.Reboot()</onclick>
-						</item>
-						<item>
-							<label>13313</label>
-							<onclick>XBMC.RestartApp()</onclick>
-						</item>
-						<item>
-							<label>13006</label>
-							<onclick>XBMC.Quit()</onclick>
-							<visible>System.LoggedOn</visible>
-						</item>
-						<item>
-							<label>20126</label>
+							<label>Messages</label>
+							<onclick>RunScript(Q:\skin\Cortana\scripts\chat.py,Chat)</onclick>
 							<onclick>Dialog.Close(shutdownmenu)</onclick>
-							<onclick>system.logoff</onclick>
-							<visible>System.LoggedOn + System.HasLoginScreen</visible>
 						</item>
 						<item>
-							<label>20045</label>
-							<onclick>xbmc.mastermode</onclick>
-							<visible>!System.IsMaster + System.LoggedOn + System.HasLocks</visible>
-						</item>
-						<item>
-							<label>20046</label>
-							<onclick>xbmc.mastermode</onclick>
-							<visible>System.IsMaster + System.LoggedOn + System.HasLocks</visible>
-						</item>
-						<item>
-							<label>130</label>
+							<label>Beacons & Activity</label>
+							<onclick>RunScript(Q:\skin\Cortana\scripts\chat.py,Activity)</onclick>
 							<onclick>Dialog.Close(shutdownmenu)</onclick>
-							<onclick>XBMC.ActivateWindow(systeminfo)</onclick>
-							<visible>System.LoggedOn</visible>
+						</item>
+						<item>
+							<label>Notifications</label>
+							<onclick>RunScript(Q:\skin\Cortana\scripts\chat.py,Notifications)</onclick>
+							<onclick>Dialog.Close(shutdownmenu)</onclick>
+						</item>
+						<item>
+							<label>Servers</label>
+							<onclick>RunScript(Q:\scripts\Cortana Server Browser\default.py)</onclick>
+							<onclick>Dialog.Close(shutdownmenu)</onclick>
+						</item>
+						<item>
+							<label>Power & Settings</label>
+							<onclick>Dialog.Close(shutdownmenu)</onclick>
+							<onclick>ActivateWindow(9011)</onclick>
+						</item>
+						<item>
+							<label>Play Disc</label>
+							<onclick>Dialog.Close(shutdownmenu)</onclick>
+							<onclick>RunScript(Q:\skin\Cortana\scripts\dvd.py)</onclick>
 						</item>
 					</content>
 				</control>
