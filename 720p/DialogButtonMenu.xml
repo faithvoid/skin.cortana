@@ -115,8 +115,8 @@
 					<content>
 						<item>
 							<label>Social</label>
-							<onclick>Dialog.Close(shutdownmenu)</onclick>
 				                        <onclick>ActivateWindow(10001,plugin://programs/xSky/,return)</onclick>
+							<onclick>Dialog.Close(shutdownmenu)</onclick>
 						</item>
 						<item>
 							<label>13005</label>
