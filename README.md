@@ -4,7 +4,7 @@
 ## Features:
 - Replaced the broken Weather page with Cortana, a series of scripts that allows you to view & join active Insignia/XLink Kai sessions, events, view server statistics, get new match notifications, get Cortana/Insignia/XLink Kai news, check your Insignia DNS settings, send/receive messages, and more!
 
-- Get social on your Xbox again! Using xChat, you can use the AT protocol (aka Bluesky) to chat with fellow gamers!
+- Get social on your Xbox again! Using Cortana Chat, you can use the AT protocol (aka Bluesky) to chat with fellow gamers and invite them to games!
   
 - Added quality-of-life functions to the Applications page (Renamed certain items to seem more "official", added "Addons" & "Scripts" buttons, "Dashboard" button, "Xbox Live" (Network Settings) button, and "Detach Virtual Disk").
   
@@ -16,7 +16,7 @@
   
 - Need to fix something? Cortana Settings Menu has you covered! With shortcuts to the Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates, and more, Cortana can help you out of most pickles!
 
-- "Guide button" feature that allows you to quickly check messages in Cortana Chat!
+- "Guide button" feature that recreates most of the social features you know and love from the 360, using Cortana Chat!
   
 ## Screenshots:
 ![cortana1](https://github.com/faithvoid/skin.cortana/assets/56975081/155d9f2a-3961-4962-bc77-d8ca4fde29e9)![cortana2](https://github.com/faithvoid/skin.cortana/assets/56975081/87ebf372-e838-4e63-9459-1ba792ccecaf)
@@ -24,11 +24,9 @@
 ![media1](https://github.com/faithvoid/skin.cortana/assets/56975081/32442a1d-fa12-40a5-b0c6-6a38d98a02b9)![media2](https://github.com/faithvoid/skin.cortana/assets/56975081/f0fb39f4-4458-4143-a8e5-7bc072cb50b8)
 
 ## TODO:
-- Implement guide button.
 - Fix wallpaper memory usage bug.
 - Fix up & release Cortana Server Browser & Cortana Chat.
 - Try to reverse engineer the Kai Engine API? 
-
 
 ## How to install:
 - Download latest release from the Releases category
