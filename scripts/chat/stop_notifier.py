@@ -1,3 +1,5 @@
+# Cortana Chat v2.0 by faithvoid - https://github.com/faithvoid/script.cortanachatv2
+
 import os
 import xbmc
 import xbmcgui
