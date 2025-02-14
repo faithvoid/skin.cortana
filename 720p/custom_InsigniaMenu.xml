@@ -35,7 +35,7 @@
 			<control type="label" id="411">
 				<description>Header label</description>
 				<posx>200</posx>
-				<label>Network Settings</label>
+				<label>Insignia</label>
 				<include>DialogHeaderTextCommons</include>
 			</control>
 			<control type="group">
@@ -115,30 +115,10 @@
 					</focusedlayout>
 					<content>
 						<item>
-							<label>13005</label>
-							<onclick>XBMC.Powerdown()</onclick>
-						</item>
-						<item>
-							<label>13013</label>
-							<onclick>XBMC.Reboot()</onclick>
-						</item>
-						<item>
-							<label>13313</label>
-							<onclick>XBMC.RestartApp()</onclick>
-						</item>
-						<item>
-							<label>Eject Disc</label>
-							<onclick>EjectTray()</onclick>
-						</item>
-						<item>
-							<label></label>
-							<onclick></onclick>
-						</item>
-						<item>
 							<label>Sessions</label>
 							<onclick>Dialog.Close(9013)</onclick>
 							<onclick>RunScript(Q:\skin\Cortana-X\scripts\serverbrowser\insignia\browser.py)</onclick>
-            </item>
+            					</item>
 						<item>
 							<label>Statistics</label>
 							<onclick>Dialog.Close(9013)</onclick>
