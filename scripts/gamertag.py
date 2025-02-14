@@ -1,9 +1,13 @@
+# Script for modifying the zone / rep information in your gamertag in Cortana. It's stored in "includes.xml" currently, so this script modifies the gamertag portions of that file. A restart of XBMC is required to see your changes!
+# Gamertag name and avatar is pulled from the current running XBMC profile, so modify those in System Settings if you're looking for that! 
+# Note that zone / rep changes are currently for all profiles. I'm looking into moving the gamertag functions out of includes.xml and possibly finding a way to pull information from the currently logged in user. (Maybe a hacky autoexec script?)
+
 import xbmc
 import xbmcgui
 import xml.etree.ElementTree as ET
 
 # Path to the includes.xml file
-XML_FILE_PATH = "Q:\\path\\to\\includes.xml"
+XML_FILE_PATH = "Q:\\skin\\Cortana\\720p\\includes.xml"
 
 class EditGamercardDialog:
     def __init__(self):
