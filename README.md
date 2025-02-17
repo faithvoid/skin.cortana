@@ -6,6 +6,8 @@
 
 - Get social on your Xbox again! Using Cortana Chat, you can use the AT protocol (aka Bluesky) to chat with fellow gamers, invite them to games, set beacons to find other players, and more!
 
+- Per-profile save games and social features! Share your Xbox with friends and family? Everyone gets their own accounts and saves!
+
 - "Guide button" feature that reimplements most of the features you know and love from the 360, using Cortana Chat! Just click in the right stick and you have full access to social features, settings, and more!
 
 - Toast notifications for messages and notifications via Cortana Chat, and toast notifications for current XLink Kai / Insignia sessions via Cortana Server Browser!
@@ -30,7 +32,7 @@
 - Fix wallpaper memory usage bug.
 - Fix up & release Cortana Server Browser & Cortana Chat.
 - Try to reverse engineer the Kai Engine API?
-- 
+- Fix multi-user savegame script.
 
 ## How to install:
 - Download latest release from the Releases category
