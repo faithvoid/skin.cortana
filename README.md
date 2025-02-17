@@ -1,4 +1,4 @@
-# Cortana - A modern, sleek Xbox 180 style theme for XBMC4Xbox, with Cortana Server Browser built-in for Insignia/XLink Kai support.
+# Cortana - A modern, sleek Xbox 180 style theme for XBMC4Xbox, with an emphasis on social / multiplayer feature integration.
 ## Requires [Cortana Server Browser](https://github.com/faithvoid/script.cortanaserverbrowser), [Cortana Chat](https://github.com/faithvoid/script.cortanachatv2), [Cortana Wireless (optional)](https://github.com/faithvoid/script.cortanawireless) & [xSky](https://github.com/faithvoid/plugin.programs.xSky) to function correctly!
 
 ## Features:
