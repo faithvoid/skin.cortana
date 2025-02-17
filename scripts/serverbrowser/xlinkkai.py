@@ -124,6 +124,7 @@ def display_events(dialog, channel, args=None):
         xbmcgui.Dialog().ok("XLink Kai - Event Details", events[selected])
     else:
         xbmc.log("No event selected or dialog cancelled", xbmc.LOGERROR)
+
 def main():
     dialog = xbmcgui.Dialog()
     feeds = {
@@ -134,7 +135,7 @@ def main():
     
     if len(sys.argv) > 1 and sys.argv[1].lower() in feeds:
         selected_function = feeds[sys.argv[1].lower()]
-        url = "http://ogxbox.org/rss/insignia.xml"
+        url = "http://ogxbox.org/rss/xlinkkai"
         root = fetch_and_parse_rss(url)
         if root is not None:
             channel = root.find('channel')
@@ -146,11 +147,11 @@ def main():
             xbmcgui.Dialog().ok("Error", "Failed to load information!")
     else:
         feed_list = list(feeds.keys())
-        selected = dialog.select("Cortana Server Browser - Insignia", feed_list)
+        selected = dialog.select("Cortana Server Browser - XLink Kai", feed_list)
         if selected >= 0:
             name = feed_list[selected]
             selected_function = feeds[name]
-            url = "http://ogxbox.org/rss/insignia.xml"
+            url = "http://ogxbox.org/rss/xlinkkai"
             root = fetch_and_parse_rss(url)
             if root is not None:
                 channel = root.find('channel')
