@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 import urllib2
 import re
 import os
+from datetime import datetime, timedelta
 
 def fetch_and_parse_rss(url):
     try:
@@ -104,37 +105,59 @@ def display_feed_items(dialog, channel, args=None):
     else:
         process_game_selection(dialog, regular_items, selected_game)
       
+def parse_event_date(title):
+    today = datetime.today().strftime('%a, %b %d')
+    tomorrow = (datetime.today() + timedelta(days=1)).strftime('%a, %b %d')
+    
+    if "Today:" in title:
+        return (0, title)  # Prioritize "Today"
+    elif "Tomorrow:" in title:
+        return (1, title)  # Prioritize "Tomorrow"
+    else:
+        # Extract actual date from title using regex (assuming format "Sat, Feb 23rd")
+        match = re.search(r'(\w{3}),\s(\w{3})\s(\d{1,2})', title)
+        if match:
+            day, month, date = match.groups()
+            try:
+                event_date = datetime.strptime(month + " " + date, "%b %d")
+                event_date = event_date.replace(year=datetime.today().year)
+                return (2, event_date)  # Assign priority for sorting
+            except ValueError:
+                pass
+    return (3, title)  # Default fallback priority
+
 def display_events(dialog, channel, args=None):
-    events = ['...']  # Inserting the '...' at the beginning of the list
-    prefix_to_remove = "Game Event - "
+    events = []
     for item in channel.findall('item'):
         title_elem = item.find('title')
-        # Check if title starts with "Team XLink Discord Game Event"
+        description_elem = item.find('description')
         if title_elem is not None and title_elem.text.startswith("Game Event"):
-            # Strip the specific prefix for a cleaner display
-            clean_title = title_elem.text.replace(prefix_to_remove, "")
-            description_elem = item.find('description')
             description = clean_html(description_elem.text) if description_elem is not None else "No description available"
-            events.append(clean_title + " - " + description)
+            event_text = title_elem.text.replace("Game Event - ", "") + " - " + description
+            events.append((parse_event_date(title_elem.text), event_text))
     
-    selected = dialog.select("XLink Kai - Events", events)
-    if selected == 0:  # Check if '...' was selected
-        xbmc.executebuiltin('RunScript(Q:\\scripts\\Cortana Server Browser\\xlink\\xlinkkai.py)')
-    elif selected > 0:  # If any actual event is selected
-        xbmcgui.Dialog().ok("XLink Kai - Event Details", events[selected])
-    else:
-        xbmc.log("No event selected or dialog cancelled", xbmc.LOGERROR)
+    # Sort events by parsed date priority
+    events.sort()
+    
+    # Extract sorted event texts
+    sorted_event_texts = [event[1] for event in events]
+    
+    selected = dialog.select("Game Events", sorted_event_texts)
+    if selected == 0:
+        main()
+    elif selected > 0:
+        xbmcgui.Dialog().ok("Event Details", sorted_event_texts[selected])
 
 def main():
     dialog = xbmcgui.Dialog()
     feeds = {
-        "sessions": display_feed_items,
-        "statistics": display_stats,
-        "events": display_events,
+        "Sessions": display_feed_items,
+        "Statistics": display_stats,
+        "Events": display_events,
     }
     
-    if len(sys.argv) > 1 and sys.argv[1].lower() in feeds:
-        selected_function = feeds[sys.argv[1].lower()]
+    if len(sys.argv) > 1 and sys.argv[1].capitalize() in feeds:
+        selected_function = feeds[sys.argv[1].capitalize()]
         url = "http://ogxbox.org/rss/xlinkkai"
         root = fetch_and_parse_rss(url)
         if root is not None:
