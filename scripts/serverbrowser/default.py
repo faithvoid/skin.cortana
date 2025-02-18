@@ -9,7 +9,7 @@ XLINKKAI = os.path.join(SCRIPT_DIR, "xlinkkai.py")
 
 # Show a dialog with two options
 dialog = xbmcgui.Dialog()
-choice = dialog.select("Select an option", ["Insignia", "XLink Kai"])
+choice = dialog.select("Cortana Server Browser", ["Insignia", "XLink Kai"])
 
 # Execute the selected script
 if choice == 0:
