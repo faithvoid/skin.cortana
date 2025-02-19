@@ -16,7 +16,7 @@
   
 - Added quality-of-life functions to the Applications page (Renamed certain items to seem more "official", added "Addons" & "Scripts" buttons, "Dashboard" button, "Xbox Live" (Network Settings) button, and "Detach Virtual Disk").
   
-- Added quality-of-life functions to the Media page (added Video/Music/Photo add-ons!)
+- Added quality-of-life functions to the Media page (added Video/Music/Photo add-ons!), as well as watched media indicators that were missing from the original JX 720!
   
 - Neon wallpapers have been swapped out for pastel abstract shapes (based off of old macOS 9 wallpapers), making the UI easier on the eyes.
   
@@ -31,6 +31,7 @@
 ![media1](https://github.com/faithvoid/skin.cortana/assets/56975081/32442a1d-fa12-40a5-b0c6-6a38d98a02b9)![media2](https://github.com/faithvoid/skin.cortana/assets/56975081/f0fb39f4-4458-4143-a8e5-7bc072cb50b8)
 
 ## TODO:
+- Integrate some sort of homebrew download utility, maybe labelled "Cortana Marketplace"?
 - Fix wallpaper memory usage bug.
 - Fix up & release Cortana Server Browser & Cortana Chat.
 - Try to reverse engineer the Kai Engine API?
