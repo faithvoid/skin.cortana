@@ -15,6 +15,7 @@ import time
 BASE_URL = 'https://bsky.social/xrpc/'
 CHAT_URL = 'https://api.bsky.chat/xrpc/'
 GAMES_FILE = xbmc.translatePath('Q://games.txt')
+HANDLES_FILE = xbmc.translatePath('special://home/userdata/profiles/{}/handles.txt'.format(xbmc.getInfoLabel('System.ProfileName')))
 
 # Load login credentials
 def load_credentials():
@@ -68,13 +69,19 @@ def fetch_home_feed(session, cursor=None):
 
 # Fetch user profile to resolve handle
 def fetch_profile(session, did):
+    handle = read_handle_from_file(did)
+    if handle:
+        return handle
+    
     url = BASE_URL + 'app.bsky.actor.getProfile'
     headers = {'Authorization': 'Bearer ' + session['accessJwt']}
     params = {'actor': did}
     try:
         response = requests.get(url, headers=headers, params=params)
         response.raise_for_status()
-        return response.json().get('handle', 'Unknown')
+        handle = response.json().get('handle', 'Unknown')
+        write_handle_to_file(did, handle)
+        return handle
     except requests.exceptions.RequestException:
         return 'Unknown'
 
@@ -84,6 +91,21 @@ def fetch_profiles(session, dids):
     for did in dids:
         profiles[did] = fetch_profile(session, did)
     return profiles
+
+# Read handle from file
+def read_handle_from_file(did):
+    if os.path.exists(HANDLES_FILE):
+        with open(HANDLES_FILE, 'r') as f:
+            for line in f:
+                stored_did, handle = line.strip().split(',')
+                if stored_did == did:
+                    return handle
+    return None
+
+# Write handle to file
+def write_handle_to_file(did, handle):
+    with open(HANDLES_FILE, 'a') as f:
+        f.write('{},{}\n'.format(did, handle))
 
 # Fetch notifications
 def fetch_notifications(session):
