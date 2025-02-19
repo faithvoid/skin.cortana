@@ -256,9 +256,9 @@ def create_post(session):
         try:
             response = requests.post(url, headers=headers, json=data)
             response.raise_for_status()  # Raise an error for bad status codes
-            xbmcgui.Dialog().ok('Cortana Chat', 'Post created successfully!')
+            xbmc.executebuiltin("Notification(Cortana Chat, Post created successfully!, 5000)")
         except requests.exceptions.RequestException as e:
-            xbmcgui.Dialog().ok('Cortana Chat', 'Failed to create post. Error: {}'.format(str(e)))
+            xbmc.executebuiltin("Notification(Cortana Chat, Failed to create post. Error: " + str(e) + ", 5000)")
 
 # Create a new post with media
 def create_post_media(session):
@@ -322,21 +322,22 @@ def create_post_media(session):
         try:
             response = requests.post(url, headers=headers, json=data)
             response.raise_for_status()  # Raise an error for bad status codes
-            xbmcgui.Dialog().ok('Cortana Chat', 'Post created successfully!')
+            xbmc.executebuiltin("Notification(Cortana Chat, Post created successfully!, 5000)")
         except requests.exceptions.RequestException as e:
-            xbmcgui.Dialog().ok('Cortana Chat', 'Failed to create post. Error: {}'.format(str(e)))
+            xbmc.executebuiltin("Notification(Cortana Chat, Failed to create post. Error: " + str(e) + ", 5000)")
 
 # Function to create a game invite post
 def create_post_invite(session):
     games = load_games()
     if not games:
-        xbmcgui.Dialog().ok('Cortana Chat', 'No games found in games.txt.')
+        xbmc.executebuiltin("Notification(Error, No games found in games.txt!, 5000)")
         return
     
+    sorted_games = sorted(games.keys())
     dialog = xbmcgui.Dialog()
-    selected_game = dialog.select('Select a game to invite', list(games.keys()))
+    selected_game = dialog.select('Select a game to invite', sorted_games)
     if selected_game >= 0:
-        game_title = list(games.keys())[selected_game]
+        game_title = sorted_games[selected_game]
         invite_text = "{} would like to play '{}' (Xbox)".format(session['handle'], game_title)
 
         now = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
@@ -358,9 +359,9 @@ def create_post_invite(session):
         try:
             response = requests.post(url, headers=headers, json=data)
             response.raise_for_status()
-            xbmcgui.Dialog().ok('Cortana Chat', 'Beacon for {} posted successfully!'.format(game_title))
+            xbmc.executebuiltin("Notification(Cortana Chat, Beacon for " + game_title + " posted successfully!, 5000)")
         except requests.exceptions.RequestException as e:
-            xbmcgui.Dialog().ok('Cortana Chat', 'Failed to post beacon: {}'.format(str(e)))
+            xbmc.executebuiltin("Notification(Cortana Chat, Failed to post beacon: " + str(e) + ", 5000)")
 
 def search_for_beacon(session, game_title=None):
     """Search for game invite beacons on Bluesky."""
@@ -391,7 +392,7 @@ def search_for_beacon(session, game_title=None):
                 post_data.append(p)
         
         if len(results) == 1:
-            xbmcgui.Dialog().ok("No Results", "No matching beacons found.")
+            xbmc.executebuiltin("Notification(No Results, No beacons found., 5000)")
             return
         
         choice = xbmcgui.Dialog().select("Beacon Search Results", results)
@@ -963,9 +964,9 @@ def invite_user_to_game(session, handle):
         try:
             response = requests.post(url, headers=headers, json=data)
             response.raise_for_status()
-            xbmcgui.Dialog().ok("Cortana Chat", "Game invite sent to @" + handle)
+            xbmc.executebuiltin("Notification(Cortana Chat, Game invite sent to @" + handle + ", 2500)")
         except requests.exceptions.RequestException as e:
-            xbmcgui.Dialog().ok("Cortana Chat", "Failed to send game invite: " + str(e))
+            xbmc.executebuiltin("Notification(Cortana Chat, Failed to send game invite: " + str(e) + ", 2500)")
 
 # Display conversations
 def display_conversations(session):
@@ -1004,12 +1005,15 @@ def display_message_options(session, convo_id, game_title):
     dialog = xbmcgui.Dialog()
     options = ['Reply', 'Accept Invite', 'Decline Invite']
     choice = dialog.select('Message Options', options)
-    if choice == 0:
+    if choice == -1:
+        display_messages(session, convo_id)
+    elif choice == 0:
         reply_to_conversation(session, convo_id)
     elif choice == 1:
         launch_game(game_title)
     elif choice == 2:
         display_messages(session, convo_id)
+
 
 # Display game invite options in home feed
 def display_game_invite_options(game_title):
@@ -1051,9 +1055,9 @@ def send_message(session, handle):
         try:
             response = requests.post(url, headers=headers, json=data)
             response.raise_for_status()
-            xbmcgui.Dialog().ok("Success", "Message sent to @" + handle)
+            xbmc.executebuiltin("Notification(Success, Message sent to @" + handle + ", 2500)")
         except requests.exceptions.RequestException as e:
-            xbmcgui.Dialog().ok("Error", "Failed to send message: " + str(e))
+            xbmc.executebuiltin("Notification(Error, Failed to send message: " + str(e) + ", 2500)")
 
 # Check if a conversation already exists, otherwise makes a new one.
 def get_or_create_conversation(session, handle):
@@ -1098,9 +1102,9 @@ def reply_to_conversation(session, convo_id):
         try:
             response = requests.post(url, headers=headers, json=data)
             response.raise_for_status()
-            xbmcgui.Dialog().ok('Cortana Chat', 'Reply sent successfully!')
+            xbmc.executebuiltin("Notification(Cortana Chat, Reply sent successfully!, 2500)")
         except requests.exceptions.RequestException as e:
-            xbmcgui.Dialog().ok('Cortana Chat', 'Failed to send reply: ' + str(e))
+            xbmc.executebuiltin("Notification(Cortana Chat, Failed to send reply: " + str(e) + ", 2500)")
     display_messages(session, convo_id)
 
 # Nudge function
@@ -1115,9 +1119,10 @@ def send_nudge(session, convo_id):
     try:
         response = requests.post(url, headers=headers, json=data)
         response.raise_for_status()
-        xbmcgui.Dialog().ok('Cortana Chat', 'Nudge sent successfully!')
+        xbmc.executebuiltin("Notification(Cortana Chat, Nudge sent successfully!, 2500)")
     except requests.exceptions.RequestException as e:
-        xbmcgui.Dialog().ok('Cortana Chat', 'Failed to send nudge: ' + str(e))
+        xbmc.executebuiltin("Notification(Cortana Chat, Failed to send nudge: " + str(e) + ", 2500)")
+    display_messages(session, convo_id)
 
 # Invite to a game
 def invite_to_game(session, convo_id):
@@ -1126,10 +1131,11 @@ def invite_to_game(session, convo_id):
         xbmcgui.Dialog().ok('Cortana Chat', 'No games found in games.txt.')
         return
     
+    sorted_games = sorted(games.keys())
     dialog = xbmcgui.Dialog()
-    selected_game = dialog.select('Select a game to invite', list(games.keys()))
+    selected_game = dialog.select('Select a game to invite', sorted_games)
     if selected_game >= 0:
-        game_title = list(games.keys())[selected_game]
+        game_title = sorted_games[selected_game]
         reply_text = session['handle'] + " would like to play '" + game_title + "'"
         now = datetime.datetime.utcnow().isoformat() + 'Z'
         message = {'$type': 'chat.bsky.convo.message', 'text': reply_text, 'createdAt': now}
@@ -1139,10 +1145,13 @@ def invite_to_game(session, convo_id):
         try:
             response = requests.post(url, headers=headers, json=data)
             response.raise_for_status()
-            xbmcgui.Dialog().ok('Cortana Chat', 'Invite sent successfully!')
-	    return
+
+            xbmc.executebuiltin("Notification(Cortana Chat, Invite sent successfully!, 2500)")
+            display_messages(session, convo_id)
+            return
         except requests.exceptions.RequestException as e:
-            xbmcgui.Dialog().ok('Cortana Chat', 'Failed to send invite: ' + str(e))
+            xbmc.executebuiltin("Notification(Cortana Chat, Failed to send invite: " + str(e) + ", 2500)")
+            display_messages(session, convo_id)
 
 def load_games():
     games = {}
@@ -1157,7 +1166,7 @@ def load_games():
                     except ValueError:
                         xbmc.log("Skipping malformed line: {}".format(line), xbmc.LOGERROR)
     return games
-	
+
 def save_games(games):
     """Save updated games list back to games.txt."""
     with open(GAMES_FILE, "w") as file:
@@ -1174,7 +1183,7 @@ def edit_game_name(games, index):
         if new_name:
             games[index] = (new_name, games[index][1])  # Update name
             save_games(games)
-            xbmcgui.Dialog().ok("Success", "Game name updated successfully!")
+            xbmc.executebuiltin("Notification(Success, Game name updated successfully!, 2500)")
 
 def edit_game_path(games, index):
     """Open a file browser to select a new .xbe path."""
@@ -1183,7 +1192,7 @@ def edit_game_path(games, index):
     if new_path:
         games[index] = (games[index][0], new_path)  # Update path
         save_games(games)
-        xbmcgui.Dialog().ok("Success", "Game path updated successfully!")
+        xbmc.executebuiltin("Notification(Success, Invite sent successfully!, 2500)")
 
 def edit_game_menu(games, index):
     """Show a submenu to allow the user to edit or remove a game."""
@@ -1202,7 +1211,7 @@ def edit_games():
     """Main game editing menu."""
     games = load_games()
     if not games:
-        xbmcgui.Dialog().ok("Error", "No games found in games.txt!")
+        xbmc.executebuiltin("Notification(Error, No games found in games.txt!, 2500)")
         return
 
     dialog = xbmcgui.Dialog()
