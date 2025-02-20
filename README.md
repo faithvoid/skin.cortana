@@ -1,4 +1,4 @@
-# Cortana - A modern, sleek Xbox 180 style theme for XBMC4Xbox, with an emphasis on social / multiplayer feature integration.
+# Cortana - A modern, sleek "Xbox 180" style theme for XBMC4Xbox, with an emphasis on social / multiplayer feature integration.
 ## Requires [Cortana Server Browser](https://github.com/faithvoid/script.cortanaserverbrowser), [Cortana Chat](https://github.com/faithvoid/script.cortanachatv2), [Cortana Wireless (optional)](https://github.com/faithvoid/script.cortanawireless) & [xSky](https://github.com/faithvoid/plugin.programs.xSky) to function correctly!
 
 ## Screenshots:
@@ -22,29 +22,33 @@
 - Added quality-of-life functions to the Applications page (Renamed certain items to seem more "official", added "Addons" & "Scripts" buttons, "Dashboard" button, "Xbox Live" (Network Settings) button, and "Detach Virtual Disk").
   
 - Added quality-of-life functions to the Media page (added Video/Music/Photo add-ons!), as well as watched media indicators that were missing from the original JX 720!
+
+- Use Cortana Marketplace to quickly download homebrew games & emulators! If stored in a .zip/.rar file, Cortana Marketplace will automatically extract the homebrew to your Homebrew folder so you can instantly hop into the action!
   
 - Neon wallpapers have been swapped out for pastel abstract shapes (based off of old macOS 9 wallpapers), making the UI easier on the eyes.
+
+- Multiple open-source font options for accessibility!
   
 - Reintroduced Gamertag function from MC360! (Name & Avatar are automatically pulled from current XBMC profile, and you can manually edit your Rep, Gamerscore & Zone in Cortana Settings in the Guide menu!) 
   
 - Need to fix something? Cortana Settings Menu has you covered! With shortcuts to the Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates, and more, Cortana can help you out of most pickles!
 
 ## TODO:
-- Integrate some sort of homebrew download utility, maybe labelled "Cortana Marketplace"?
+- Further work on "Cortana Marketplace" (need to find a futureproof source for Xbox homebrew and possibly convert it from a script into an add-on for image previews)
 - Fix wallpaper memory usage bug.
 - Fix up & release Cortana Server Browser & Cortana Chat.
-- Try to reverse engineer the Kai Engine API?
 - Fix multi-user savegame script.
 
 ## How to install:
 - Download latest release from the Releases category
-- Copy "Cortana" to "Q:\skins\", and "Cortana Server Browser" into your scripts folder.
+- Copy "Cortana" to "Q:\skins\"
 - Change your skin to Cortana in the XBMC Appearance menu.
 - ???
 - Profit!
 
 ## Bugs:
-- Cortana blade is currently a bit visually glitchy and visibly says "Refresh" when switching pages. It's a "blink and you'll mix it" issue but it's still present. 
+- Cortana blade is currently a bit visually glitchy and visibly says "Refresh" when switching pages. It's a "blink and you'll mix it" issue but it's still present.
+- Signing in to Cortana Chat can currently hang the system when launching a game right as the script refreshes. Looking into a fix for this ASAP before release.
 - You tell me.
 
 ## Credits:
