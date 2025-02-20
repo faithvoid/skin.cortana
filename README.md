@@ -47,3 +47,6 @@
 ## Bugs:
 - Cortana blade is currently a bit visually glitchy and visibly says "Refresh" when switching pages. It's a "blink and you'll mix it" issue but it's still present. 
 - You tell me.
+
+## Credits:
+- Steve Matteson - Open Sans font
