@@ -38,6 +38,7 @@
 - Fix wallpaper memory usage bug.
 - Fix up & release Cortana Server Browser & Cortana Chat.
 - Fix multi-user savegame script.
+- Make black backgrounds semi-transparent for a more mid-2000s aesthetic.
 
 ## How to install:
 - Download latest release from the Releases category
