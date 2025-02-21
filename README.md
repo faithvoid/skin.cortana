@@ -60,7 +60,7 @@
 - Fix up & release Cortana Server Browser & Cortana Chat.
 - Fix multi-user savegame script.
 - Make black backgrounds semi-transparent for a more mid-2000s aesthetic.
-- Work on "Aero" and "Aero Lite" themes
+- Work on "Aero" and "Aero Lite" themes (Aero Lite requires the most work, as the font colour system needs to be re-done to render fonts and their shadows correctly).
 
 ## How to install:
 - Download latest release from the Releases category
