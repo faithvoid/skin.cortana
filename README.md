@@ -1,27 +1,6 @@
 # Cortana - A modern, sleek "Xbox 180" style theme for XBMC4Xbox, with an emphasis on social / multiplayer feature integration.
 ## Requires [Cortana Server Browser](https://github.com/faithvoid/script.cortanaserverbrowser), [Cortana Chat](https://github.com/faithvoid/script.cortanachatv2), [Cortana Wireless (optional)](https://github.com/faithvoid/script.cortanawireless) & [xSky](https://github.com/faithvoid/plugin.programs.xSky) to function correctly!
 
-## Menu Screenshots:
-![cortana1](screenshots/1.png)
-![cortana2](screenshots/2.png)
-![cortana3](screenshots/3.png)
-![cortana4](screenshots/4.png)
-![cortana5](screenshots/5.png)
-![cortana6](screenshots/6.png)
-![cortana7](screenshots/7.png)
-
-## Cortana Server Browser:
-![csb1](screenshots/csb1.png)
-![csb2](screenshots/csb2.png)
-![csb3](screenshots/csb3.png)
-
-## Cortana Chat
-![cc1](screenshots/cc1.png)
-![cc2](screenshots/cc2.png)
-![cc3](screenshots/cc3.png)
-![cc4](screenshots/cc4.png)
-![cc5](screenshots/cc5.png)
-
 ## Features:
 - Replaced the broken Weather page with Cortana, a series of scripts that allows you to view & join active Insignia/XLink Kai sessions, events, view server statistics, get new match notifications, get Cortana/Insignia/XLink Kai news, check your Insignia DNS settings, send/receive messages, and more!
 
@@ -49,12 +28,40 @@
   
 - Need to fix something? Cortana Settings Menu has you covered! With shortcuts to the Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates, and more, Cortana can help you out of most pickles!
 
+- ## Menu Screenshots:
+![cortana1](screenshots/1.png)
+![cortana2](screenshots/2.png)
+![cortana3](screenshots/3.png)
+![cortana4](screenshots/4.png)
+![cortana5](screenshots/5.png)
+![cortana6](screenshots/6.png)
+![cortana7](screenshots/7.png)
+
+## Cortana Server Browser:
+![csb1](screenshots/csb1.png)
+![csb2](screenshots/csb2.png)
+![csb3](screenshots/csb3.png)
+
+## Cortana Chat
+![cc1](screenshots/cc1.png)
+![cc2](screenshots/cc2.png)
+![cc3](screenshots/cc3.png)
+![cc4](screenshots/cc4.png)
+![cc5](screenshots/cc5.png)
+
+## Themes
+### Aero
+![cc1](screenshots/aero-test.png)
+### Aero Lite
+![cc1](screenshots/aerolite-test.png)
+
 ## TODO:
 - Further work on "Cortana Marketplace" (need to find a futureproof source for Xbox homebrew and possibly convert it from a script into an add-on for image previews)
 - Fix wallpaper memory usage bug.
 - Fix up & release Cortana Server Browser & Cortana Chat.
 - Fix multi-user savegame script.
 - Make black backgrounds semi-transparent for a more mid-2000s aesthetic.
+- Work on "Aero" and "Aero Lite" themes
 
 ## How to install:
 - Download latest release from the Releases category
