@@ -2,9 +2,13 @@
 ## Requires [Cortana Server Browser](https://github.com/faithvoid/script.cortanaserverbrowser), [Cortana Chat](https://github.com/faithvoid/script.cortanachatv2), [Cortana Wireless (optional)](https://github.com/faithvoid/script.cortanawireless) & [xSky](https://github.com/faithvoid/plugin.programs.xSky) to function correctly!
 
 ## Screenshots:
-![cortana1](https://github.com/faithvoid/skin.cortana/assets/56975081/155d9f2a-3961-4962-bc77-d8ca4fde29e9)![cortana2](https://github.com/faithvoid/skin.cortana/assets/56975081/87ebf372-e838-4e63-9459-1ba792ccecaf)
-![games1](https://github.com/faithvoid/skin.cortana/assets/56975081/67e80518-ec0c-42dd-9daf-42c644d40f4a)![games2](https://github.com/faithvoid/skin.cortana/assets/56975081/0ff4259d-46ba-4f82-b6e2-78b35650c017)
-![media1](https://github.com/faithvoid/skin.cortana/assets/56975081/32442a1d-fa12-40a5-b0c6-6a38d98a02b9)![media2](https://github.com/faithvoid/skin.cortana/assets/56975081/f0fb39f4-4458-4143-a8e5-7bc072cb50b8)
+![cortana1](screenshots/1.png)
+![cortana2](screenshots/2.png)
+![cortana3](screenshots/3.png)
+![cortana4](screenshots/4.png)
+![cortana5](screenshots/5.png)
+![cortana6](screenshots/6.png)
+![cortana7](screenshots/7.png)
 
 ## Features:
 - Replaced the broken Weather page with Cortana, a series of scripts that allows you to view & join active Insignia/XLink Kai sessions, events, view server statistics, get new match notifications, get Cortana/Insignia/XLink Kai news, check your Insignia DNS settings, send/receive messages, and more!
