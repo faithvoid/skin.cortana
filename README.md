@@ -70,3 +70,4 @@
 
 ## Credits:
 - Steve Matteson - Open Sans font
+- Jezz_X & Team Blackbolt - JX720 & MC360, respectively (this project uses JX720 as a base, with MC360 assets reincorporated where possible)
