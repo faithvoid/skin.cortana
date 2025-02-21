@@ -2,12 +2,9 @@
 ## Requires [Cortana Server Browser](https://github.com/faithvoid/script.cortanaserverbrowser), [Cortana Chat](https://github.com/faithvoid/script.cortanachatv2), [Cortana Wireless (optional)](https://github.com/faithvoid/script.cortanawireless) & [xSky](https://github.com/faithvoid/plugin.programs.xSky) to function correctly!
 
 ## Screenshots:
-![cortana1](screenshots/1.png)
-![cortana2](screenshots/2.png)
-![cortana3](screenshots/3.png)
-![cortana4](screenshots/4.png)
-![cortana5](screenshots/5.png)
-![cortana6](screenshots/6.png)
+![cortana1](screenshots/1.png)![cortana2](screenshots/2.png)
+![cortana3](screenshots/3.png)![cortana4](screenshots/4.png)
+![cortana5](screenshots/5.png)![cortana6](screenshots/6.png)
 ![cortana7](screenshots/7.png)
 
 ## Features:
