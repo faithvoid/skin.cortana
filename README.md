@@ -38,22 +38,21 @@
 ![cortana7](screenshots/7.png)
 
 ## Cortana Server Browser:
-![csb1](screenshots/csb1.png)
-![csb2](screenshots/csb2.png)
-![csb3](screenshots/csb3.png)
+![Cortana Server Browser - 1](screenshots/csb1.png)
+![Cortana Server Browser - 2](screenshots/csb2.png)
+![Cortana Server Browser - 3](screenshots/csb3.png)
 
 ## Cortana Chat
-![cc1](screenshots/cc1.png)
-![cc2](screenshots/cc2.png)
-![cc3](screenshots/cc3.png)
-![cc4](screenshots/cc4.png)
-![cc5](screenshots/cc5.png)
+![Cortana Chat - 1](screenshots/cc1.png)
+![Cortana Chat - 2](screenshots/cc2.png)
+![Cortana Chat - 3](screenshots/cc3.png)
+![Cortana Chat - 4](screenshots/cc4.png)
 
 ## Themes
-### Aero
-![cc1](screenshots/aero-test.png)
-### Aero Lite
-![cc1](screenshots/aerolite-test.png)
+### Aero (WIP)
+![Aero](screenshots/aero-test.png)
+### Aero Lite (WIP)
+![Aero Lite](screenshots/aerolite-test.png)
 
 ## TODO:
 - Further work on "Cortana Marketplace" (need to find a futureproof source for Xbox homebrew and possibly convert it from a script into an add-on for image previews)
