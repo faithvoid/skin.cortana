@@ -10,7 +10,7 @@ LOGIN_FILE = xbmc.translatePath('special://home/userdata/profiles/{}/login.txt'.
 
 # Function to delete the PID file and show notifications
 def delete_pid():
-    if os.path.exists(PID_FILE):
+    if os.path.exists(PID_FILE) and os.path.exists(LOGIN_FILE):
         os.remove(PID_FILE)
         xbmc.executebuiltin('Notification(Cortana Chat, You have successfully logged out of Cortana Chat!, 5000)')
     else:
@@ -19,33 +19,35 @@ def delete_pid():
 # Function to prompt user for login details and save them
 def prompt_login():
     dialog = xbmcgui.Dialog()
-    if dialog.yesno("Cortana Chat", "No login file detected. Would you like to log in?"):
-        keyboard = xbmc.Keyboard("", "Enter Username:")
-        keyboard.doModal()
-        if keyboard.isConfirmed():
-            username = keyboard.getText()
-        else:
-            return
-        
-        keyboard = xbmc.Keyboard("", "Enter Password:", True)
-        keyboard.doModal()
-        if keyboard.isConfirmed():
-            password = keyboard.getText()
-        else:
-            return
-        
-        with open(LOGIN_FILE, "w") as f:
-            f.write(username + "\n")
-            f.write(password + "\n")
-        
-        xbmc.executebuiltin('Notification(Cortana Chat, Login details saved successfully!, 5000)')
+    if not dialog.yesno("Cortana Chat", "No login file detected.", "Would you like to log in to Cortana Chat? (powered by Bluesky)"):
+        return  # Exit the function if the user selects "No"
+
+    keyboard = xbmc.Keyboard("", "Enter Username:")
+    keyboard.doModal()
+    if keyboard.isConfirmed():
+        username = keyboard.getText()
+    else:
+        return
+    
+    keyboard = xbmc.Keyboard("", "Enter App Password:", True)
+    keyboard.doModal()
+    if keyboard.isConfirmed():
+        password = keyboard.getText()
+    else:
+        return
+    
+    with open(LOGIN_FILE, "w") as f:
+        f.write(username + "\n")
+        f.write(password + "\n")
+    
+    xbmc.executebuiltin('Notification(Cortana Chat, Login details saved successfully!, 5000)')    
 
 # Main execution logic
 if __name__ == '__main__':
     if not os.path.exists(LOGIN_FILE):
         prompt_login()
     
-    if not os.path.exists(PID_FILE):
+    if not os.path.exists(PID_FILE) and os.path.exists(LOGIN_FILE):
         # If notifier.pid does not exist, immediately launch chat.py
         xbmc.executebuiltin("RunScript(\"" + CHAT_SCRIPT + "\")")
         xbmc.executebuiltin('Notification(Cortana Chat, You have successfully logged into Cortana Chat!, 5000)')
