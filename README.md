@@ -6,6 +6,8 @@
 
 - Get social on your Xbox again! Using Cortana Chat, you can use the AT protocol (aka Bluesky) to chat with fellow gamers, invite them to games, set beacons to find other players, and more!
 
+- Show off your gamerscore and reputation with CortanaID, a reimplementation of gamertags from MC360! Set it manually, or pull it from your Xbox Live profile!
+
 - Paired with Cortana Wireless, you can easily connect a Raspberry Pi or similar SBC as a wireless network card for your Xbox and easily manage your Wi-Fi settings!
 
 - Per-profile save games and social features! Share your Xbox with friends and family? Everyone gets their own accounts and saves!
