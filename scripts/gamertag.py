@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 import re
 
 # Path to the includes.xml file
-XML_FILE_PATH = "Q:\\skin\\Cortana-X\\720p\\includes.xml"
+XML_FILE_PATH = "Q:\\skin\\Cortana\\720p\\includes.xml"
 
 class EditGamercardDialog:
     def __init__(self):
@@ -49,26 +49,26 @@ class EditGamercardDialog:
             return keyboard.getText()
         return current_value
 
-    def save_values(self):
+    def save_values(self, option):
         try:
             # Load the XML and update the fields
             tree = ET.parse(XML_FILE_PATH)
             root = tree.getroot()
 
-            # Iterate through all the label elements to find the relevant ones and update them
-            for label in root.iter('label'):
-                if label.text.startswith("Gamerscore: "):
-                    label.text = "Gamerscore: " + self.open_keyboard(self.gamerscore_value, "Enter Gamerscore")
-                elif label.text.startswith("Zone: "):
-                    label.text = "Zone: " + self.open_keyboard(self.zone_value, "Enter Zone")
-
-            # Prompt the user to enter the Rep value
-            new_rep_value = self.open_keyboard(self.rep_value, "Enter Rep (1-5)")
-            if new_rep_value.isdigit() and 1 <= int(new_rep_value) <= 5:
-                # Iterate through all the texture elements to find the relevant rep value and update it
-                for texture in root.iter('texture'):
-                    if re.search(r"rating/gamerscore(\d).png", texture.text):
-                        texture.text = "rating/gamerscore{}.png".format(new_rep_value)
+            if option == "Gamerscore":
+                for label in root.iter('label'):
+                    if label.text.startswith("Gamerscore: "):
+                        label.text = "Gamerscore: " + self.open_keyboard(self.gamerscore_value, "Enter Gamerscore")
+            elif option == "Zone":
+                for label in root.iter('label'):
+                    if label.text.startswith("Zone: "):
+                        label.text = "Zone: " + self.open_keyboard(self.zone_value, "Enter Zone")
+            elif option == "Rep":
+                new_rep_value = self.open_keyboard(self.rep_value, "Enter Rep (1-5)")
+                if new_rep_value.isdigit() and 1 <= int(new_rep_value) <= 5:
+                    for texture in root.iter('texture'):
+                        if re.search(r"rating/gamerscore(\d).png", texture.text):
+                            texture.text = "rating/gamerscore{}.png".format(new_rep_value)
 
             # Save changes back to the XML file
             tree.write(XML_FILE_PATH)
@@ -78,10 +78,11 @@ class EditGamercardDialog:
             xbmcgui.Dialog().ok("Error", "Failed to save changes: " + str(e))
 
     def show(self):
-        # Ask for confirmation to save
-        result = xbmcgui.Dialog().yesno("Edit Gamer Card", "Would you like to edit your gamertag details?", "", "", "Yes", "No")
-        if result == 1:
-            self.save_values()
+        # Display a menu with options
+        options = ["Edit Gamerscore", "Edit Rep", "Edit Zone"]
+        selected = xbmcgui.Dialog().select("Select Option", options)
+        if selected != -1:
+            self.save_values(options[selected])
 
 # Main execution
 if __name__ == "__main__":
