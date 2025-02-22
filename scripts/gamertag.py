@@ -5,7 +5,7 @@ import re
 import requests
 
 # Path to the includes.xml file
-XML_FILE_PATH = "Q:\\skin\\Cortana-X\\720p\\includes.xml"
+XML_FILE_PATH = "Q:\\skin\\Cortana\\720p\\includes.xml"
 
 class EditGamercardDialog:
     def __init__(self):
@@ -102,7 +102,7 @@ class EditGamercardDialog:
 
     def show(self):
         options = ["Gamerscore", "Rep", "Zone", "Get Xbox Live Profile"]
-        selected = xbmcgui.Dialog().select("Select Option", options)
+        selected = xbmcgui.Dialog().select("CortanaID", options)
         if selected != -1:
             if options[selected] == "Get Xbox Live Profile":
                 self.get_xbox_live_profile()
