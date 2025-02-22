@@ -26,7 +26,7 @@
 
 - Multiple open-source font options for accessibility!
     
-- Need to fix something? Cortana Settings Menu has you covered! With shortcuts to the Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates, and more, Cortana can help you out of most pickles!
+- Need to fix something? **Cortana Settings Menu** has you covered! With shortcuts to the **Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates,** and more, Cortana can help you out of most pickles!
 
 - ## Menu Screenshots:
 ![cortana1](screenshots/1.png)
