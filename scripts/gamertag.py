@@ -1,13 +1,10 @@
-# Script for modifying the zone / rep information in your gamertag in Cortana. It's stored in "includes.xml" currently, so this script modifies the gamertag portions of that file. A restart of XBMC is required to see your changes!
-# Gamertag name and avatar is pulled from the current running XBMC profile, so modify those in System Settings if you're looking for that! 
-# Note that zone / rep changes are currently for all profiles. I'm looking into moving the gamertag functions out of includes.xml and possibly finding a way to pull information from the currently logged in user. (Maybe a hacky autoexec script?)
-
 import xbmc
 import xbmcgui
 import xml.etree.ElementTree as ET
+import re
 
 # Path to the includes.xml file
-XML_FILE_PATH = "Q:\\skin\\Cortana\\720p\\includes.xml"
+XML_FILE_PATH = "Q:\\skin\\Cortana-X\\720p\\includes.xml"
 
 class EditGamercardDialog:
     def __init__(self):
@@ -26,15 +23,19 @@ class EditGamercardDialog:
 
             # Iterate through all the label elements to find the relevant values
             for label in root.iter('label'):
-                if label.text.startswith("Rep: "):
-                    self.rep_value = label.text.split("Rep: ")[1]
-                elif label.text.startswith("Gamerscore: "):
+                if label.text.startswith("Gamerscore: "):
                     self.gamerscore_value = label.text.split("Gamerscore: ")[1]
                 elif label.text.startswith("Zone: "):
                     self.zone_value = label.text.split("Zone: ")[1]
 
+            # Iterate through all the texture elements to find the relevant rep value
+            for texture in root.iter('texture'):
+                match = re.search(r"rating/gamerscore(\d).png", texture.text)
+                if match:
+                    self.rep_value = match.group(1)
+
             # Log the initial values for debugging
-            xbmc.log(f"Loaded defaults - Rep: {self.rep_value}, Gamerscore: {self.gamerscore_value}, Zone: {self.zone_value}", xbmc.LOGDEBUG)
+            xbmc.log("Loaded defaults - Rep: {}, Gamerscore: {}, Zone: {}".format(self.rep_value, self.gamerscore_value, self.zone_value), xbmc.LOGDEBUG)
 
         except Exception as e:
             xbmc.log("Error loading defaults: " + str(e), xbmc.LOGERROR)
@@ -56,12 +57,18 @@ class EditGamercardDialog:
 
             # Iterate through all the label elements to find the relevant ones and update them
             for label in root.iter('label'):
-                if label.text.startswith("Rep: "):
-                    label.text = "Rep: " + self.open_keyboard(self.rep_value, "Enter Rep")
-                elif label.text.startswith("Gamerscore: "):
+                if label.text.startswith("Gamerscore: "):
                     label.text = "Gamerscore: " + self.open_keyboard(self.gamerscore_value, "Enter Gamerscore")
                 elif label.text.startswith("Zone: "):
                     label.text = "Zone: " + self.open_keyboard(self.zone_value, "Enter Zone")
+
+            # Prompt the user to enter the Rep value
+            new_rep_value = self.open_keyboard(self.rep_value, "Enter Rep (1-5)")
+            if new_rep_value.isdigit() and 1 <= int(new_rep_value) <= 5:
+                # Iterate through all the texture elements to find the relevant rep value and update it
+                for texture in root.iter('texture'):
+                    if re.search(r"rating/gamerscore(\d).png", texture.text):
+                        texture.text = "rating/gamerscore{}.png".format(new_rep_value)
 
             # Save changes back to the XML file
             tree.write(XML_FILE_PATH)
