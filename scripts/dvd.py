@@ -1,6 +1,3 @@
-# Simple DVD-reading script for pairing with the disc section of the Guide menu. It detects if there's an inserted disc and launches default.xbe file if detected, otherwise, treats the disc as a media disc and runs "PlayDVD". It's hacky, but it works. 
-# An entry in "custom_DialogButtonMenu.xml" ( $INFO[System.DVDLabel] ) is then responsible for showing the disc label, which should show the game name if inserted, the DVD name if a video is inserted, or "Audio-CD" if an audio disc is inserted.
-
 import os
 import xbmc
 import xbmcgui
@@ -12,7 +9,7 @@ def launch_xbe():
     try:
         files = os.listdir(D_DRIVE)  # This will fail on audio CDs
         for file in files:
-            if file.lower().endswith('.xbe'):
+            if file.endswith('default.xbe'):
                 xbe_path = os.path.join(D_DRIVE, file)
                 xbmc.executebuiltin('RunXBE("%s")' % xbe_path)
                 return True
