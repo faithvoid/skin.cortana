@@ -1,6 +1,6 @@
 # Changes from JX720 to Cortana - February 2025
 
-- Replaced Weather blade with "Cortana", an Xbox Live style social page with current original Xbox news, social feature integration via Cortana Chat (an AT Protocol / Bluesky-based messaging solution designed to replicate most of the Xbox 360's social functionality), Insignia and XLink Kai integration, Xbox Video Chat integration, and more.
+- Replaced Weather blade with "Cortana", an Xbox Live style social page with current original Xbox news, social feature integration via Cortana Chat (an AT Protocol / Bluesky-based messaging solution designed to replicate most of the Xbox 360's social functionality, including game invitations), Insignia and XLink Kai integration, Xbox Video Chat integration, and more.
 - Reimplemented Gamertags from MC360 as "Cortana IDs", as well as the ability to pull the relevant gamerscore/reputation data from Xbox Live
 - Reimplemented "Watched" option for media (was absent from JX720 due to the author's personal preferences)
 - Games blade now has different entries for Games, Demos, Arcade Programs, Saved Games, File Manager, Marketplace, and Favourites. Programs also now has "Add-ons" and "Scripts" as submenu options.
