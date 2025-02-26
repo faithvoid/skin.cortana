@@ -24,7 +24,7 @@
   
 - Neon wallpapers have been swapped out for pastel abstract shapes (based off of old macOS 9 wallpapers), making the UI easier on the eyes.
 
-- Multiple open-source font options for accessibility!
+- Multiple open-source font options for accessibility, with the primary font now being changed to Open Sans for better readability on smaller screens!
     
 - Need to fix something? **Cortana Settings Menu** has you covered! With shortcuts to the **Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates,** and more, Cortana can help you out of most pickles!
 
