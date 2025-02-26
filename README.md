@@ -1,6 +1,32 @@
 # Cortana - A modern, sleek "Xbox 180" style theme for XBMC4Xbox, with an emphasis on social / multiplayer feature integration.
 ## Requires [Cortana Server Browser](https://github.com/faithvoid/script.cortanaserverbrowser), [Cortana Chat](https://github.com/faithvoid/script.cortanachatv2), [Cortana Wireless (optional)](https://github.com/faithvoid/script.cortanawireless) & [xSky](https://github.com/faithvoid/plugin.programs.xSky) to function correctly!
 
+## Menu Screenshots:
+![cortana1](screenshots/1.png)
+![cortana2](screenshots/2.png)
+![cortana3](screenshots/3.png)
+![cortana4](screenshots/4.png)
+![cortana5](screenshots/5.png)
+![cortana6](screenshots/6.png)
+![cortana7](screenshots/7.png)
+
+## Cortana Server Browser:
+![Cortana Server Browser - 1](screenshots/csb1.png)
+![Cortana Server Browser - 2](screenshots/csb2.png)
+![Cortana Server Browser - 3](screenshots/csb3.png)
+
+## Cortana Chat
+![Cortana Chat - 1](screenshots/cc1.png)
+![Cortana Chat - 2](screenshots/cc2.png)
+![Cortana Chat - 3](screenshots/cc3.png)
+![Cortana Chat - 4](screenshots/cc4.png)
+
+## Themes
+### Aero (WIP)
+![Aero](screenshots/aero-test.png)
+### Aero Lite (WIP)
+![Aero Lite](screenshots/aerolite-test.png)
+
 ## Features:
 - Replaced the broken Weather page with **Cortana**, a series of scripts that allows you to view & join active Insignia/XLink Kai sessions, events, view server statistics, get new match notifications, get Cortana/Insignia/XLink Kai news, check your Insignia DNS settings, send/receive messages, and more!
 
@@ -27,32 +53,6 @@
 - Multiple open-source font options for accessibility, with the primary font now being changed to Open Sans for better readability on smaller screens!
     
 - Need to fix something? **Cortana Settings Menu** has you covered! With shortcuts to the **Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates,** and more, Cortana can help you out of most pickles!
-
-- ## Menu Screenshots:
-![cortana1](screenshots/1.png)
-![cortana2](screenshots/2.png)
-![cortana3](screenshots/3.png)
-![cortana4](screenshots/4.png)
-![cortana5](screenshots/5.png)
-![cortana6](screenshots/6.png)
-![cortana7](screenshots/7.png)
-
-## Cortana Server Browser:
-![Cortana Server Browser - 1](screenshots/csb1.png)
-![Cortana Server Browser - 2](screenshots/csb2.png)
-![Cortana Server Browser - 3](screenshots/csb3.png)
-
-## Cortana Chat
-![Cortana Chat - 1](screenshots/cc1.png)
-![Cortana Chat - 2](screenshots/cc2.png)
-![Cortana Chat - 3](screenshots/cc3.png)
-![Cortana Chat - 4](screenshots/cc4.png)
-
-## Themes
-### Aero (WIP)
-![Aero](screenshots/aero-test.png)
-### Aero Lite (WIP)
-![Aero Lite](screenshots/aerolite-test.png)
 
 ## TODO (High Priority)
 - Fix wallpaper memory usage bug.
