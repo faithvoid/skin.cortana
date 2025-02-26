@@ -1,6 +1,6 @@
 # Changes from JX720 to Cortana - February 2025
 
-- Replaced Weather page with "Cortana", an Xbox Live style social page with current original Xbox news, social feature integration via Cortana Chat (an AT Protocol / Bluesky-based messaging solution designed to replicate most of the Xbox 360's social functionality), Insignia and XLink Kai integration, Xbox Video Chat integration, and more.
+- Replaced Weather blade with "Cortana", an Xbox Live style social page with current original Xbox news, social feature integration via Cortana Chat (an AT Protocol / Bluesky-based messaging solution designed to replicate most of the Xbox 360's social functionality), Insignia and XLink Kai integration, Xbox Video Chat integration, and more.
 - Reimplemented Gamertags from MC360 as "Cortana IDs", as well as the ability to pull the relevant gamerscore/reputation data from Xbox Live
 - Reimplemented "Watched" option for media (was absent from JX720 due to the author's personal preferences)
 - Games blade now has different entries for Games, Demos, Arcade Programs, Saved Games, File Manager, Marketplace, and Favourites. Programs also now has "Add-ons" and "Scripts" as submenu options.
@@ -19,7 +19,8 @@
 - Cortana Server Browser has been integrated into Cortana, which allows you to view active Insignia sessions, events, and statistics, as well as directly launch games from the Sessions menu!
 - A shortcut for the Insignia Setup Assistant has been added to "Network Settings", under "Cortana Settings".
 - An "Insignia" option has been added to the Profiles settings menu, which opens the Xbox Online Dashboard, which allows you to add/remove/edit your Insignia account on your console.
-- "Network Settigns" in "Cortana Settings" contains a Connection Test utility, which checks your current local IP, external IP, and whether or not your DNS is properly resolving to Insignia.
+- "Network Settings" in "Cortana Settings" contains a Connection Test utility, which checks your current local IP, external IP, and whether or not your DNS is properly resolving to Insignia.
+- "Video Chat" has been added to the Cortana blade, which uses Xbox Video Chat to let you voice/video chat with other Insignia users! (Requires a copy of Xbox Video Chat and an original Xbox webcam, or a modded PS2 EyeToy)
 
 ## XLink Kai Integration:
 ### XLink Kai support has been integrated in the following ways:
