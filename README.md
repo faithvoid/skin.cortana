@@ -1,4 +1,4 @@
-# Cortana - A modern, sleek "Xbox 180" style theme for XBMC4Xbox, with an emphasis on social / multiplayer feature integration.
+# cortanaOS - A modern, sleek "Xbox 180" style theme for XBMC4Xbox, with an emphasis on social / multiplayer feature integration.
 ## Requires [Cortana Server Browser](https://github.com/faithvoid/script.cortanaserverbrowser), [Cortana Chat](https://github.com/faithvoid/script.cortanachatv2), [Cortana Wireless (optional)](https://github.com/faithvoid/script.cortanawireless) & [xSky](https://github.com/faithvoid/plugin.programs.xSky) to function correctly!
 
 ## Menu Screenshots:
@@ -32,7 +32,7 @@
 
 - Get social on your Xbox again! Using **Cortana Chat**, you can use the AT protocol (aka Bluesky) to chat with fellow gamers, invite them to games, set beacons to find other players, and more!
 
-- Show off your gamerscore and reputation with **CortanaID**, a reimplementation of gamertags from MC360! Set it manually, or pull it from your Xbox Live profile!
+- Show off your gamerscore and reputation with **CortanaID**, a reimplementation of gamertags from MC360! Set it manually, or pull it from your Xbox Live profile manually (or automatically on startup)!
 
 - Paired with **Cortana Wireless**, you can easily connect a Raspberry Pi or similar SBC as a wireless network card for your Xbox and easily manage your Wi-Fi settings!
 
@@ -60,7 +60,6 @@
 - Reincorporate gamertag and media buttons from MC360 into guide menu somehow.
 
 ## TODO (Low-Med Priority):
-- Implement autoexec script that automatically synchronizes gamerscore/reputation from an Xbox Live profile.
 - Further work on "Cortana Marketplace" (need to find a futureproof source for Xbox homebrew and possibly convert it from a script into an add-on for image previews)
 - Fix multi-user savegame script.
 - Work on "Aero" and "Aero Lite" themes (Aero Lite requires the most work, as the font colour system needs to be re-done to render fonts and their shadows correctly, Aero is basically done).
