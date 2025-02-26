@@ -1,14 +1,14 @@
-# cortanaOS - A modern, sleek "Xbox 180" style theme for XBMC4Xbox, with an emphasis on social / multiplayer feature integration.
+# cortanaOS (fka Cortana) - A modern, sleek "Xbox 180" style theme for XBMC4Xbox, with an emphasis on social / multiplayer feature integration.
 ## Requires [Cortana Server Browser](https://github.com/faithvoid/script.cortanaserverbrowser), [Cortana Chat](https://github.com/faithvoid/script.cortanachatv2), [Cortana Wireless (optional)](https://github.com/faithvoid/script.cortanawireless) & [xSky](https://github.com/faithvoid/plugin.programs.xSky) to function correctly!
 
 ## Menu Screenshots:
-![cortana1](screenshots/1.png)
-![cortana2](screenshots/2.png)
-![cortana3](screenshots/3.png)
-![cortana4](screenshots/4.png)
-![cortana5](screenshots/5.png)
-![cortana6](screenshots/6.png)
-![cortana7](screenshots/7.png)
+![cortanaOS1](screenshots/1.png)
+![cortanaOS2](screenshots/2.png)
+![cortanaOS3](screenshots/3.png)
+![cortanaOS4](screenshots/4.png)
+![cortanaOS5](screenshots/5.png)
+![cortanaOS6](screenshots/6.png)
+![cortanaOS7](screenshots/7.png)
 
 ## Cortana Server Browser:
 ![Cortana Server Browser - 1](screenshots/csb1.png)
@@ -32,13 +32,13 @@
 
 - Get social on your Xbox again! Using **Cortana Chat**, you can use the AT protocol (aka Bluesky) to chat with fellow gamers, invite them to games, set beacons to find other players, and more!
 
-- Show off your gamerscore and reputation with **CortanaID**, a reimplementation of gamertags from MC360! Set it manually, or pull it from your Xbox Live profile manually (or automatically on startup)!
+- Show off your gamerscore and reputation with **Cortana ID**, a reimplementation of gamertags from MC360! Set it manually, or pull it from your Xbox Live profile manually (or automatically on startup)!
 
 - Paired with **Cortana Wireless**, you can easily connect a Raspberry Pi or similar SBC as a wireless network card for your Xbox and easily manage your Wi-Fi settings!
 
 - **Per-profile save games and social features!** Share your Xbox with friends and family? Everyone gets their own accounts and saves!
 
-- **"Guide button"** feature that reimplements most of the features you know and love from the 360, using Cortana Chat! Just click in the right stick and you have full access to social features, settings, and more!
+- **"Guide button"** feature that reimplements most of the features you know and love from the 360, using Cortana Chat! Just click in the right stick and you have full access to social features, matchmaking features, media controls, settings, and more!
 
 - **Toast notifications** for messages and notifications via Cortana Chat, and toast notifications for current XLink Kai / Insignia sessions via Cortana Server Browser!
   
@@ -52,9 +52,11 @@
 
 - Multiple open-source font options for accessibility, with the primary font now being changed to Open Sans for better readability on smaller screens!
     
-- Need to fix something? **Cortana Settings Menu** has you covered! With shortcuts to the **Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates,** and more, Cortana can help you out of most pickles!
+- Need to fix something? **cortanaOS Settings Menu** has you covered! With shortcuts to the **Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates,** and more, cortanaOS can help you out of most pickles!
 
 ## TODO (High Priority)
+- Move all script paths to "special://skin/scripts" instead of their current hardcoded paths
+- Make a proper list of all custom pages and their window IDs
 - Fix wallpaper memory usage bug.
 - Fix up & release Cortana Server Browser & Cortana Chat.
 - Reincorporate gamertag and media buttons from MC360 into guide menu somehow.
@@ -63,9 +65,11 @@
 - Further work on "Cortana Marketplace" (need to find a futureproof source for Xbox homebrew and possibly convert it from a script into an add-on for image previews)
 - Fix multi-user savegame script.
 - Work on "Aero" and "Aero Lite" themes (Aero Lite requires the most work, as the font colour system needs to be re-done to render fonts and their shadows correctly, Aero is basically done).
+- Maybe make a menu option modification script(?)
+- Change references from "Cortana" to "cortanaOS"
 
 ## How to install:
-- Download latest release from the Releases category
+- Download latest release from the Releases category (if there isn't a release .zip, do NOT clone this skin from GitHub and expect support! The repo is ALWAYS under development so things may be broken even if most features work, especially script-related functionality!)
 - Copy "Cortana" to "Q:\skins\"
 - Change your skin to Cortana in the XBMC Appearance menu.
 - ???
