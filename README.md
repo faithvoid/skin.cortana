@@ -60,6 +60,7 @@
 - Reincorporate gamertag and media buttons from MC360 into guide menu somehow.
 
 ## TODO (Low-Med Priority):
+- Implement autoexec script that automatically synchronizes gamerscore/reputation from an Xbox Live profile.
 - Further work on "Cortana Marketplace" (need to find a futureproof source for Xbox homebrew and possibly convert it from a script into an add-on for image previews)
 - Fix multi-user savegame script.
 - Work on "Aero" and "Aero Lite" themes (Aero Lite requires the most work, as the font colour system needs to be re-done to render fonts and their shadows correctly, Aero is basically done).
