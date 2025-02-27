@@ -54,9 +54,14 @@
     
 - Need to fix something? **cortanaOS Settings Menu** has you covered! With shortcuts to the **Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates,** and more, cortanaOS can help you out of most pickles!
 
+## How to install:
+- Download latest release from the Releases category (if there isn't a release .zip, do NOT clone this skin from GitHub and expect support! The repo is ALWAYS under development so things may be broken even if most features work, especially script-related functionality!)
+- Copy "Cortana" to "Q:\skins\"
+- Change your skin to Cortana in the XBMC Appearance menu.
+- ???
+- Profit!
+
 ## TODO (High Priority)
-- Move all script paths to "special://skin/scripts" instead of their current hardcoded paths
-- Make a proper list of all custom pages and their window IDs
 - Fix wallpaper memory usage bug.
 - Fix up & release Cortana Server Browser & Cortana Chat.
 - Reincorporate gamertag and media buttons from MC360 into guide menu somehow.
@@ -67,13 +72,6 @@
 - Work on "Aero" and "Aero Lite" themes (Aero Lite requires the most work, as the font colour system needs to be re-done to render fonts and their shadows correctly, Aero is basically done).
 - Maybe make a menu option modification script(?)
 - Change references from "Cortana" to "cortanaOS"
-
-## How to install:
-- Download latest release from the Releases category (if there isn't a release .zip, do NOT clone this skin from GitHub and expect support! The repo is ALWAYS under development so things may be broken even if most features work, especially script-related functionality!)
-- Copy "Cortana" to "Q:\skins\"
-- Change your skin to Cortana in the XBMC Appearance menu.
-- ???
-- Profit!
 
 ## Bugs:
 - Cortana blade is currently a bit visually glitchy and visibly says "Refresh" when switching pages. It's a "blink and you'll mix it" issue but it's still present.
