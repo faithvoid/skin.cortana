@@ -77,6 +77,7 @@
 - Cortana blade is currently a bit visually glitchy and visibly says "Refresh" when switching pages. It's a "blink and you'll mix it" issue but it's still present.
 - Signing in to Cortana Chat can currently hang the system when launching a game right as the script refreshes. Looking into a fix for this ASAP before release.
 - You tell me.
+- Certain multi-tasking actions can crash 64MB Xbox systems if video/visualization transparency behind menus is enabled, such as going to the menu and launching a script via the guide menu. This shouldn't be an issue for 128mb systems, but YMMV. You can toggle this option under "cortanaOS -> Skin Settings" to find what works for you.
 
 ## Credits:
 - Steve Matteson - Open Sans font
