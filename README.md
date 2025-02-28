@@ -68,6 +68,7 @@
 
 ## TODO (Low-Med Priority):
 - Further work on "Cortana Marketplace" (need to find a futureproof source for Xbox homebrew and possibly convert it from a script into an add-on for image previews)
+- Add per-user autoexec files.
 - Fix multi-user savegame script.
 - Work on "Aero" and "Aero Lite" themes (Aero Lite requires the most work, as the font colour system needs to be re-done to render fonts and their shadows correctly, Aero is basically done).
 - Maybe make a menu option modification script(?)
