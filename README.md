@@ -54,6 +54,8 @@
     
 - Need to fix something? **cortanaOS Settings Menu** has you covered! With shortcuts to the **Dashboard, Internet Connection Test utilities, Notification Settings, Clear Cache, XBMC4Gamers Scripts, Updates,** and more, cortanaOS can help you out of most pickles!
 
+- Easily boot into reactOS / Linux via the "otherOS" option in Settings!
+
 ## How to install:
 - Download latest release from the Releases category (if there isn't a release .zip, do NOT clone this skin from GitHub and expect support! The repo is ALWAYS under development so things may be broken even if most features work, especially script-related functionality!)
 - Copy "Cortana" to "Q:\skins\"
