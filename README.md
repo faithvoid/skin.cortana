@@ -60,7 +60,9 @@
 
 - Instantly access the Insignia & XLink Kai websites from your phone by enabling QR codes for the Cortana blade in the settings! You can also display additional QR codes such as local IP address & an XLink Kai webUI IP by enabling those in the settings menu, and the skin will take care of setting them up seamlessly!
 
-- Speed improvements over the base JX720 skin! All textures have been packaged into one file, meaning faster load times across the dashboard, and lower system resource usage (has 35-39MB of RAM free at idle on average)!
+- Speed improvements over the base JX720 skin, making it one of the lightest Xbox Media Centre themes, even with all these new features! All textures have been packaged into one file, meaning faster load times across the dashboard, and lower system resource usage (has 35-39MB of RAM free at idle on average)!
+
+- Per-page RSS feeds! The Cortana blade shows Insignia & XLink session/server/event information & the Settings menu shows Cortana news by default, and the Games & Media blades are for your own RSS feeds! (These can all easily be modified in RssFeeds.xml in your UserData folder)
 
 ## How to install:
 - Download latest release from the Releases category (if there isn't a release .zip, do NOT clone this skin from GitHub and expect support! The repo is ALWAYS under development so things may be broken even if most features work, especially script-related functionality!)
