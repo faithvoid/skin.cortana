@@ -56,6 +56,12 @@
 
 - Easily boot into reactOS / Linux via the "otherOS" option in Settings!
 
+- Every single option you see can be toggled and configured in the settings menu! Don't like the logos? You can turn them off, or replace them with Xbox logos! Don't use XLink Kai? You can disable everything XLink Kai related! Don't use Cortana Chat? You can disable that, too! 
+
+- Instantly access the Insignia & XLink Kai websites from your phone by enabling QR codes for the Cortana blade in the settings! You can also display additional QR codes such as local IP address & an XLink Kai webUI IP by enabling those in the settings menu, and the skin will take care of setting them up seamlessly!
+
+- Speed improvements over the base JX720 skin! All textures have been packaged into one file, meaning faster load times across the dashboard, and lower system resource usage (has 35-39MB of RAM free at idle on average)!
+
 ## How to install:
 - Download latest release from the Releases category (if there isn't a release .zip, do NOT clone this skin from GitHub and expect support! The repo is ALWAYS under development so things may be broken even if most features work, especially script-related functionality!)
 - Copy "Cortana" to "Q:\skins\"
@@ -64,7 +70,6 @@
 - Profit!
 
 ## TODO (High Priority)
-- Fix wallpaper memory usage bug.
 - Fix up & release Cortana Server Browser & Cortana Chat.
 - Reincorporate gamertag and media buttons from MC360 into guide menu somehow.
 
@@ -72,9 +77,7 @@
 - Further work on "Cortana Marketplace" (need to find a futureproof source for Xbox homebrew and possibly convert it from a script into an add-on for image previews)
 - Add per-user autoexec files.
 - Fix multi-user savegame script.
-- Work on "Aero" and "Aero Lite" themes (Aero Lite requires the most work, as the font colour system needs to be re-done to render fonts and their shadows correctly, Aero is basically done).
-- Maybe make a menu option modification script(?)
-- Change references from "Cortana" to "cortanaOS"
+- Work on "Aero Lite" theme (a light pastel version of the default theme)
 
 ## Bugs:
 - Cortana blade is currently a bit visually glitchy and visibly says "Refresh" when switching pages. It's a "blink and you'll mix it" issue but it's still present.
