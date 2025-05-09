@@ -36,7 +36,7 @@
 
 - Paired with **Cortana Wireless**, you can easily connect a Raspberry Pi or similar SBC as a wireless network card for your Xbox and easily manage your Wi-Fi settings!
 
-- **Per-profile save games and social features!** Share your Xbox with friends and family? Everyone gets their own accounts and saves!
+- **Per-profile save games, auto-start scripts and social features!** Share your Xbox with friends and family? Everyone gets their own accounts and saves!
 
 - **"Guide button"** feature that reimplements most of the features you know and love from the 360, using Cortana Chat! Just click in the right stick and you have full access to social features, matchmaking features, media controls, settings, and more!
 
@@ -77,7 +77,6 @@
 
 ## TODO (Low-Med Priority):
 - Further work on "Cortana Marketplace" (need to find a futureproof source for Xbox homebrew and possibly convert it from a script into an add-on for image previews)
-- Add per-user autoexec files.
 - Fix multi-user savegame script.
 - Work on "Aero Lite" theme (a light pastel version of the default theme)
 
