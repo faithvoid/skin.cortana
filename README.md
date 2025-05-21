@@ -1,4 +1,4 @@
-# cortanaOS - A modern, sleek "Xbox 180" style theme for XBMC4Xbox, with an emphasis on social / multiplayer feature integration.
+# cortanaOS - A modern, sleek, social "Xbox 180" style dashboard for XBMC4Xbox.
 ## Requires [Cortana Server Browser](https://github.com/faithvoid/script.cortanaserverbrowser), [Cortana Chat](https://github.com/faithvoid/script.cortanachatv2), [Cortana Wireless (optional)](https://github.com/faithvoid/script.cortanawireless) & [xSky](https://github.com/faithvoid/plugin.programs.xSky) to function correctly!
 
 ## Menu Screenshots:
@@ -33,6 +33,8 @@
 - Get social on your Xbox again! Using **Cortana Chat**, you can use the AT protocol (aka Bluesky) to chat with fellow gamers, invite them to games, set beacons to find other players, and more, as well as quick access to Xbox Video Chat for voice/video chat over Insignia!
 
 - Show off your gamerscore and reputation with **Cortana ID**, a reimplementation of gamertags from MC360! Set it manually, or pull it from your Xbox Live profile manually (or automatically on startup)!
+
+- Discord Rich Presence support, just like modern consoles! Show off what you're playing to your friends at any time! (Uses [Xbox Discord Rich Presence](https://github.com/OfficialTeamUIX/Xbox-Discord-Rich-Presence))
 
 - Paired with **Cortana Wireless**, you can easily connect a Raspberry Pi or similar SBC as a wireless network card for your Xbox and easily manage your Wi-Fi settings!
 
